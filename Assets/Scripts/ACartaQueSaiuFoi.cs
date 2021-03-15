@@ -28,8 +28,9 @@ public class ACartaQueSaiuFoi : MonoBehaviour
 
     void TiraACartaEImprime()
     {
-        int indiceDaCartaSorteada = Random.Range(0, cartas.Length);
+        int indiceDaCartaSorteada = Random.Range(0, cartas.Length); //*.length para saber o tamanho do vetor
         Debug.Log("A carta que saiu foi " + cartas[indiceDaCartaSorteada]);
+        Debug.Log("Prime novamente a tecla do espaço para sair outra carta!");
     }
 
     void IniciaJogo()
